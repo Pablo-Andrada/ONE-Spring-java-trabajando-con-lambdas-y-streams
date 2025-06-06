@@ -20,7 +20,7 @@ public class Principal {
     private ConvierteDatos conversor = new ConvierteDatos();
 
     public void muestraElMenu() {
-        System.out.println("Por favor escribe el nombre de la serie que deseas buscar");
+        System.out.println("Por favor escribe el nombre de la serie que deseas buscar: ");
         //Busca los datos generales de las series
         var nombreSerie = teclado.nextLine();
         var json = consumoApi.obtenerDatos(URL_BASE + nombreSerie.replace(" ", "+") + API_KEY);
