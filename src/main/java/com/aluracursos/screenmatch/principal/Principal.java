@@ -132,4 +132,9 @@ public class Principal {
         System.out.println("Episodio Mejor evaluado: " + est.getMax());
         System.out.println("Episodio Peor evaluado: " + est.getMin());
     }
+
+    public static void main(String[] args) {
+        Principal programa = new Principal();
+        programa.muestraElMenu();
+    }
 }
